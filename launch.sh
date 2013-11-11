@@ -8,8 +8,8 @@ function boot
     bochs -qf $CONFIG
 }
 
-# compiles the boot loader source into a binary cde
+# compiles the boot loader source into binary code
 nasm $SOURCE -f bin -o $DEST
 
-# launchs bochs with given config file
+# launches bochs with given config file
 $(boot)
